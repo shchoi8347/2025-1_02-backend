@@ -30,7 +30,7 @@ public class UserService {
     }
 
     // 사용자 검색
-    public UserEntity findByCredential(final String username, final String password) {
+    public UserEntity getByCredential(final String username, final String password) {
         return userRepository.findByUsernameAndPassword(username, password);
     }
 }
